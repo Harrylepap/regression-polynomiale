@@ -23,3 +23,8 @@ plt.xlabel('temps de chargement en secondes')
 plt.ylabel('montant des achats euros')
 plt.scatter(tempsChargementPages, montantAchat)
 plt.show()
+
+p4 = np.poly1d(np.polyfit(x, y, 4))
+#print p4
+xp = np.linspace(0, 7, 100)
+plt.plot(xp, p4(xp), c='r')
