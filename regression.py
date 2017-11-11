@@ -16,3 +16,10 @@ montantAchat = np.random.normal(50.0, 10.0, 1000) / (tempsChargementPages * temp
 x = np.array(tempsChargementPages)
 # montantAchat est la variable cible (qu'on cherche à prédire)
 y = np.array(montantAchat)
+
+axes = plt.axes()
+axes.grid()
+plt.xlabel('temps de chargement en secondes')
+plt.ylabel('montant des achats euros')
+plt.scatter(tempsChargementPages, montantAchat)
+plt.show()
